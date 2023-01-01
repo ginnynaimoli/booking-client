@@ -26,10 +26,10 @@ const List = () => {
   
   const { data, loading, reFetch } = useFetch(
     destination 
-      ? `https://booking-api.onrender.com/api/hotels?city=${destination}&min=${min || 0 }&max=${max || 999}`
+      ? `https://booking-api-xkuy.onrender.com/api/hotels?city=${destination}&min=${min || 0 }&max=${max || 999}`
       : city.name 
-        ? `https://booking-api.onrender.com/api/hotels/city/${city.name}?min=${min || 0 }&max=${max || 999}`
-        : `https://booking-api.onrender.com/api/hotels`
+        ? `https://booking-api-xkuy.onrender.com/api/hotels/city/${city.name}?min=${min || 0 }&max=${max || 999}`
+        : `https://booking-api-xkuy.onrender.com/api/hotels`
   )
 
   const handleClick = () => {

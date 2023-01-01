@@ -35,7 +35,7 @@ const Hotel = () => {
 
   console.log(days, dates, id, options)
 
-  const { data, loading } = useFetch(`https://booking-api.onrender.com/api/hotels/find/${id}`)
+  const { data, loading } = useFetch(`https://booking-api-xkuy.onrender.com/api/hotels/find/${id}`)
   const { user } = useContext(AuthContext)
 
   const handleOpenReservation = () => {

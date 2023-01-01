@@ -4,7 +4,7 @@ import './hotelsByCity.css'
 import { Link } from 'react-router-dom'
 
 const HotelsByCity = () => {
-  const { data, loading, error } = useFetch('https://booking-api.onrender.com/api/hotels/countByCity?cities=new%20york,seoul,london')
+  const { data, loading, error } = useFetch('https://booking-api-xkuy.onrender.com/api/hotels/countByCity?cities=new%20york,seoul,london')
 
   return (
     <div className="featured">

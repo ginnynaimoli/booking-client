@@ -3,7 +3,7 @@ import useFetch from '../../hooks/useFetch'
 import { Link } from "react-router-dom"
 
 const HotelsFavorite = () => {
-  const { data, loading, error } = useFetch('https://booking-api.onrender.com/api/hotels?featured=true&limit=4')
+  const { data, loading, error } = useFetch('https://booking-api-xkuy.onrender.com/api/hotels?featured=true&limit=4')
   
   return (
     <div className="fp">

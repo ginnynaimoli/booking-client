@@ -8,7 +8,7 @@ import useFetch from '../../hooks/useFetch'
 import './reservation.css'
 
 const Reservation = ({ setOpen, hotelId }) => {
-  const { data } = useFetch(`https://booking-api.onrender.com/api/hotels/room/${hotelId}`)
+  const { data } = useFetch(`https://booking-api-xkuy.onrender.com/api/hotels/room/${hotelId}`)
   const [selectedRooms, setSelectedRooms] = useState([])
   const { dates } = useContext(SearchContext)
   const navigate = useNavigate()
