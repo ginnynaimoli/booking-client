@@ -8,7 +8,7 @@ import useFetch from '../../hooks/useFetch'
 import './reservation.css'
 
 const Reservation = ({ setOpen, hotelId }) => {
-  const { data } = useFetch(`https://style-me-api.onrender.com/api/hotels/room/${hotelId}`)
+  const { data } = useFetch(`https://booking-api.onrender.com/api/hotels/room/${hotelId}`)
   const [selectedRooms, setSelectedRooms] = useState([])
   const { dates } = useContext(SearchContext)
   const navigate = useNavigate()
@@ -51,7 +51,7 @@ const Reservation = ({ setOpen, hotelId }) => {
     try {
       await Promise.all(
         selectedRooms.map((roomId) => {
-          const response = axios.put(`https://style-me-api.onrender.com/api/rooms/availability/${roomId}`, {
+          const response = axios.put(`https://booking-api.onrender.com/api/rooms/availability/${roomId}`, {
             dates: selectedDates
           })
           return response.data
